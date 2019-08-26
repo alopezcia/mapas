@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
 import { MapaComponent } from './components/mapa/mapa.component';
 
-// Angular Material
+import { apiKey } from './config';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { MapaComponent } from './components/mapa/mapa.component';
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    AgmCoreModule.forRoot({apiKey: 'AIzaSyAt71ndWTlcTSTuYsPTDiU8RJvVY9J_kio'})
+    AgmCoreModule.forRoot({apiKey})
   ],
   providers: [],
   bootstrap: [AppComponent]
